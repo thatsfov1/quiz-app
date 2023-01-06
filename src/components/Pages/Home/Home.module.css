@@ -1,0 +1,17 @@
+.title{
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: white;
+    font-size: 4rem;
+    width: 50%;
+}
+
+.forms{
+    width: 30%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    padding-top:40px;
+}

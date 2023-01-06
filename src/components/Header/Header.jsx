@@ -1,11 +1,12 @@
 import React from "react";
 import s from './Header.module.css'
+import {NavLink} from "react-router-dom";
 
 const Header = (props) => {
     return <div className={s.header}>
-        <h1>
+        <NavLink to='/'>
             Quiz App
-        </h1>
+        </NavLink>
     </div>;
 }
 
