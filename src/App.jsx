@@ -28,7 +28,7 @@ function App() {
                       <Route path={'/'} exact element={<Home fetchQuestions={fetchQuestions} name={name} setName={setName}/>}/>
                       <Route path={'/quiz'} element={<Quiz score={score} setScore={setScore}
                                                            name={name} questions={questions} setQuestions={setQuestions}/>}/>
-                      <Route path={'/results'} element={<Results score={score}/>}/>
+                      <Route path={'/result'} element={<Results name={name} score={score}/>}/>
                   </Routes>
               </div>
           </BrowserRouter>

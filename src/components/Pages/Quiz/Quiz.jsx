@@ -16,7 +16,7 @@ const Quiz = ({score,setScore,questions,setQuestions,name}) => {
             ])
         )
 
-    },[questions])
+    },[questions,currQuestion])
 
     const handleShuffle = (options) =>{
         return options.sort(() => Math.random - 0.5)
@@ -25,12 +25,22 @@ const Quiz = ({score,setScore,questions,setQuestions,name}) => {
 
     return <div className={s.container}>
         <span className={s.title}> Welcome,<i>{name}</i></span>
-        {questions ? <div>
+        {questions ? <div className={s.quizContainer}>
             <div className={s.quizInfo}>
                 <span> {questions[currQuestion].category}</span>
                 <span>Score: {score} </span>
             </div>
-            <Question/>
+            <Question
+                score={score}
+                setScore={setScore}
+                correct={questions[currQuestion]?.correct_answer}
+                currQuestion={currQuestion}
+                setCurrQuestion={setCurrQuestion}
+                questions={questions}
+                setQuestions={setQuestions}
+                options={options}
+
+            />
         </div> : <img style={{marginTop:100}} src={loading}/> }
 
     </div>;

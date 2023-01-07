@@ -13,3 +13,12 @@ a{
     text-decoration: none !important;
     font-weight: bold;
 }
+
+@media(max-width: 614px){
+    a{
+        font-size: 3rem;
+    }
+    .header{
+        height: 100px;
+    }
+}
