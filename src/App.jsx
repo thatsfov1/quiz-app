@@ -4,7 +4,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./components/Pages/Home/Home.jsx";
 import Quiz from "./components/Pages/Quiz/Quiz.jsx";
 import Results from "./components/Pages/Results/Results.jsx";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import axios from "axios";
 
 function App() {
@@ -20,7 +20,6 @@ function App() {
     }
 
   return (
-      <div>
           <BrowserRouter>
               <Header/>
               <div className="app">
@@ -32,7 +31,6 @@ function App() {
                   </Routes>
               </div>
           </BrowserRouter>
-      </div>
   )
 }
 
