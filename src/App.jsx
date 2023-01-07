@@ -21,8 +21,7 @@ function App() {
             <Header/>
             <div className="app">
                     <Routes>
-                        <Route path={'/'} exact
-                               element={<Home fetchQuestions={fetchQuestions} name={name} setName={setName}/>}/>
+                        <Route path={'/'} element={<Home fetchQuestions={fetchQuestions} name={name} setName={setName}/>}/>
                         <Route path={'/quiz'} element={<Quiz score={score} setScore={setScore}
                                                              name={name} questions={questions}
                                                              setQuestions={setQuestions}/>}/>
