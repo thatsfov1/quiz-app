@@ -63,7 +63,7 @@ const Home = ({name, setName, fetchQuestions}) => {
 export const ErrorContent = ({children}) => {
     return <div style={{
         width: "100%", color: "white",
-        height: "50px", borderRadius: 10, backgroundColor: "#cf1020", display: "flex",
+        height: "50px", borderRadius: 10, backgroundColor: "#fd5c63", display: "flex",
         alignItems: "center", justifyContent: "center", fontSize: "1.2rem",
     }}>
         {children}
