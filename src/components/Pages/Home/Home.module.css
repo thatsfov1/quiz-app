@@ -10,6 +10,12 @@
     width: 30%;
 }
 
+.error{
+    color: #fd5c63;
+    font-size: 18px;
+    font-weight: 500;
+}
+
 .container{
     display: flex;
     justify-content: space-around;
@@ -28,6 +34,6 @@
     .title{
         width: 85%;
         font-size: 2rem;
-        letter-spacing: 0px;
+        letter-spacing: 0;
     }
 }

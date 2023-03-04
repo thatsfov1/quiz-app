@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import './Question.css'
 import {Button} from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
-import {ErrorContent} from "../Pages/Home/Home";
 
 
 const Question = ({
@@ -43,11 +42,6 @@ const Question = ({
         }
     }
 
-
-    const handleQuit  = () =>{
-
-    }
-
     return <div className='container'>
         <h1>Question {currQuestion + 1}:</h1>
         <div className='singleQuestion'>
@@ -62,7 +56,7 @@ const Question = ({
 
                 {item}</button>)}</div>
             <div className='controls'>
-                <Button className='quit' onClick={()=> handleQuit()} type='button' size='lg' href='/'
+                <Button className='quit' type='button' size='lg' href='/'
                         variant='secondary' style={{width:185 }}>
                     Quit
                 </Button>
@@ -72,6 +66,16 @@ const Question = ({
             </div>
         </div>
     </div>;
+}
+
+const ErrorContent = ({children}) => {
+    return <div style={{
+        width: "100%", color: "white",
+        height: "50px", borderRadius: 10, backgroundColor: "#fd5c63", display: "flex",
+        alignItems: "center", justifyContent: "center", fontSize: "1.2rem",
+    }}>
+        {children}
+    </div>
 }
 
 export default Question;
