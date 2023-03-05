@@ -19,7 +19,7 @@ const Quiz = ({score,setScore,questions,setQuestions,name}) => {
     },[questions,currQuestion])
 
     const handleShuffle = (options) =>{
-        return options.sort(() => Math.random - 0.5)
+        return options.sort(() => Math.random() - 0.5)
     }
 
 
@@ -41,7 +41,7 @@ const Quiz = ({score,setScore,questions,setQuestions,name}) => {
                 options={options}
 
             />
-        </div> : <img style={{marginTop:100}} src={loading}/> }
+        </div> : <img alt='loading' style={{marginTop:100}} src={loading}/> }
 
     </div>;
 }
